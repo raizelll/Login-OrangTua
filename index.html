@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Presensi dan Nilai Mahasiswa</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="logotelyu.png" type="image/png">
+</head>
+
+
+
+<body>
+    <header>
+        <h1>Presensi dan Nilai Mahasiswa</h1>
+    </header>
+    <main id="main-content">
+        <section id="login">
+            <h2>Login Sebagai OrangTua</h2>
+            <form id="loginForm" onsubmit="return handleLogin(event)">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Login</button>
+            </form>
+        </section>
+        <section id="profile" style="display:none;">
+            <h2>Profile</h2>
+            <img id="profile-picture" src="" alt="Profile Picture" style="width:150px; height:150px;">
+            <p id="welcome-message"></p>
+        </section>
+        <section id="presensi" style="display:none;">
+            <h2>Presensi</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Mata Kuliah</th>
+                        <th>Presentase Pertemuan</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>KALKULUS 2</td>
+                        <td>97%</td>
+                    </tr>
+                    <tr>
+                        <td>FISIKA DASAR 2</td>
+                        <td>100%</td>
+                    </tr>
+                    <tr>
+                        <td>KIMIA DASAR 2</td>
+                        <td>100%</td>
+                    <tr>
+                        <td>MATRIKS DAN RUANG VEKTOR</td>
+                        <td>97%</td>
+                   </tr>
+                   <tr>
+                        <td>PROBABILITAS DAN STATISTIKA</td>
+                        <td>100%</td>
+                   </tr>
+                   <tr>
+                        <td>MENGGAMBAR TEKNIK</td>
+                        <td>100%</td>
+                   <tr>
+                        <td>MEKANIKA TEKNIK</td>
+                        <td>87%</td>
+                   
+                </tbody>
+            </table>
+        </section>
+        <section id="nilai" style="display:none;">
+            <h2>Nilai</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Mata Kuliah</th>
+                        <th>Nilai</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>KALKULUS 2</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>FISIKA DASAR 2</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                        <td>KIMIA DASAR 2</td>
+                        <td>-</td>
+                    </tr>
+                    <tr>
+                      <td>MATRIKS DAN RUANG VEKTOR</td>
+                      <td>-</td>
+                  </tr>
+                  <tr>
+                    <td>PROBABILITAS DAN STATISTIKA</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                  <td>MENGGAMBAR TEKNIK</td>
+                  <td>-</td>
+              </tr>
+              <tr>
+                  <td>MEKANIKA TEKNIK</td>
+                  <td>-</td>
+              </tr>
+              <tr>
+                  <td>Kimia</td>
+                  <td>-</td>
+              </tr>
+              <tr>
+                        <td>Matematika</td>
+                        <td>-</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Telkom University</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
